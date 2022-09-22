@@ -70,7 +70,7 @@ class GravatarHelper extends Helper
 
         $default = (false !== strpos($default, '.') && 0 !== strpos($default, 'http')) ? UrlHelper::rel2abs($default) : $default;
 
-        return $url.('&d='.urlencode($default));
+        return $default;
     }
 
     /**
